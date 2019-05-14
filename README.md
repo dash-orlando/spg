@@ -59,4 +59,4 @@ The following steps will guide users through the **spg** using the **cruciform**
     
     > **NOTE:** The performance of the entire program relies heavily on the **voxel size** parameter specified here. The smaller the size, the higher the resolution, and the longer the wait!
     
-![Voxelize Input Geometry]()
+![Voxelize Input Geometry](https://github.com/pd3d/spg/blob/master/media/cruciform_fig_voxelize.PNG)
