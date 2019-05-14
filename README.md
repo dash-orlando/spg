@@ -45,4 +45,18 @@ The following steps will guide users through the **spg** using the **cruciform**
         
         > **NOTE:** Other geometry extensions, such as .OBJ may be supported... but have not been tested...
         
+        > **NOTE:** If you DO NOT see the geometry, remember to press `Ctrl + M`
+        
 ![Import Geometry](https://github.com/pd3d/spg/blob/master/media/cruciform_fig_import.PNG)   
+
+2.  **Transform Input Geometry**
+    This node was created for OCD freaks. Use its `Move Centroid to Origin` button to center the input geometry
+    
+3.  **Convert Input Geometry from a Surface Mesh to a Voxel-based Volume (Voxelization)**
+    *   This node converts the input geometry, tipically in a surface mesh form (.STL, .OBJ), into a voxel-based volume
+    *   The process uses [VDB standards](https://www.openvdb.org/about/)
+    *   More information about the input parameters can be found [here](https://www.sidefx.com/docs/houdini/nodes/sop/vdbfrompolygons.html)
+    
+    > **NOTE:** The performance of the entire program relies heavily on the **voxel size** parameter specified here. The smaller the size, the higher the resolution, and the longer the wait!
+    
+![Voxelize Input Geometry]()
