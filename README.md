@@ -50,6 +50,7 @@ The following steps will guide users through the **spg** using the **cruciform**
 ![Import Geometry](https://github.com/pd3d/spg/blob/master/media/cruciform_fig_import.PNG)   
 
 2.  **Transform Input Geometry**
+    
     This node was created for OCD freaks. Use its `Move Centroid to Origin` button to center the input geometry
     
 3.  **Convert Input Geometry from a Surface Mesh to a Voxel-based Volume (Voxelization)**
@@ -60,3 +61,14 @@ The following steps will guide users through the **spg** using the **cruciform**
     > **NOTE:** The performance of the entire program relies heavily on the **voxel size** parameter specified here. The smaller the size, the higher the resolution, and the longer the wait!
     
 ![Voxelize Input Geometry](https://github.com/pd3d/spg/blob/master/media/cruciform_fig_voxelize.PNG)
+
+4.  **Erode Volume**
+    1.  In order to generate speckles embededd within the volume, without intersecting with its surfaces [a], an enclosed, scaled-down variant [b] of the original volume must be created.
+        *   
+        *
+---
+
+## Discussion
+This section was created to expand the explanation/clarification/discussion of several concepts briefly mentioned above
+
+[a] The importance of _surface intersections_ depends on the output format/extension of the SPG. **IF the program results in surface meshes** (most common), surface intersections will generate errors, holes, inverted normals. **IF the program results in voxels** (most advanced printers), intersections will be handled inherently.
