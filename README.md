@@ -45,4 +45,4 @@ The following steps will guide users through the **spg** using the **cruciform**
         
         > **NOTE:** Other geometry extensions, such as .OBJ may be supported... but have not been tested...
         
-   
+![Import Geometry](https://github.com/pd3d/spg/blob/master/media/cruciform_fig_import.PNG)   
